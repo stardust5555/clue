@@ -38,7 +38,7 @@ export default function Home() {
 
         <p className={styles.description}> Please enter the winning move...
         <br></br>
-        e.g. "queen", "C3", "D6"
+        e.g. queen, C3, D6
         </p>
 
       

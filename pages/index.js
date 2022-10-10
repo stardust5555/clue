@@ -16,7 +16,7 @@ export default function Home() {
 
     if(inputPiece.current.value.toLowerCase()==="queen" && inputStartSquare.current.value.toLowerCase()==="c3" && inputEndSquare.current.value.toLowerCase()==="d6"){
       alert("Correct!")
-      router.push("/solved")
+      router.push("/biology")
     }else{
       alert("Wrong answer - try again")
     }

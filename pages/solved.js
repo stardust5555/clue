@@ -1,6 +1,7 @@
 import ReactAudioPlayer from 'react-audio-player';
 import { useRouter } from 'next/router';
 import { useRef } from 'react';
+import Link from 'next/link';
 
 export default function Solved(){
 
@@ -38,8 +39,14 @@ export default function Solved(){
             controls    
         />
 
-        <h3>Once you've found the next clue, enter the password...</h3>
+        
+        <p>OMIT THIS: Here's the link they find in the fruit bowl:  </p>
+        <Link href="https://mywordle.strivemath.com/?word=ohlgj"><a>https://mywordle.strivemath.com/?word=ohlgj</a></Link>
 
+
+<br></br>
+<br></br>
+        <h3>Once you've found the next clue, enter the password...</h3>
         <p>Enter the password</p>
         <label for="password">Password:</label>
         <input

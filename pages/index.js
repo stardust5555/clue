@@ -8,19 +8,18 @@ export default function Home() {
 
   let router = useRouter();
 
-  const inputPiece = useRef(null);
+
   const inputStartSquare = useRef(null);
   const inputEndSquare = useRef(null);
 
   function handleClick(){
 
-    if(inputPiece.current.value.toLowerCase()==="queen" && inputStartSquare.current.value.toLowerCase()==="c3" && inputEndSquare.current.value.toLowerCase()==="d6"){
+    if(inputStartSquare.current.value.toLowerCase()==="c3" && inputEndSquare.current.value.toLowerCase()==="d6"){
       alert("Correct!")
       router.push("/biology")
     }else{
       alert("Wrong answer - try again")
     }
-    console.log(inputPiece.current.value)
     console.log(inputStartSquare.current.value)
     console.log(inputEndSquare.current.value)
   }
@@ -36,32 +35,31 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Clue 9</h1>
+        <br></br>
+
+        <Image
+          src="/chess.png"
+          alt="Chess Game"
+          width="300"
+          height="300"
+        />
 
         <p className={styles.description}> Please enter the winning move...
         <br></br>
-        e.g. queen, C3, D6
+        e.g. C3 to D6
         </p>
 
-      
-        <label for="piece">Piece:</label>
-        <input
-        ref={inputPiece}
-        type="text"
-        id="piece"
-        name="piece"
-      />
-<br></br>
-<br></br>
-      <label for="startSquare">Starting Position:</label>
+
+      {/* <label for="startSquare">Starting Position:</label> */}
       <input
         ref={inputStartSquare}
         type="text"
         id="startSquare"
         name="startSquare"
       />
-<br></br>
-<br></br>
-      <label for="endSquare">Ending Position:</label>
+
+<p>to</p>
+      {/* <label for="endSquare">Ending Position:</label> */}
       <input
         ref={inputEndSquare}
         type="text"

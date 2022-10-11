@@ -23,6 +23,11 @@ export default function Solved(){
         <>
         <h1>Congratulations!</h1>
         <h3>Here's the next clue...</h3>
+
+        <h4>Option 1</h4>
+        <p>તે સફરજનના બાઉલમાં છે</p>
+
+        <h4>Option 2</h4>
         <p>Clip 1</p>
             <ReactAudioPlayer
                 src="/spanish.mp3"
@@ -30,12 +35,12 @@ export default function Solved(){
             />
         <p>Clip 2</p>
         <ReactAudioPlayer
-            src="/guju.mp3"
+            src="/guju2.mp3"
             controls    
         />
         <p>Clip 3</p>
         <ReactAudioPlayer
-            src="/french.mp3"
+            src="/french2.mp3"
             controls    
         />
 

@@ -22,6 +22,8 @@ export default function Biology() {
   const inputMusic1 = useRef(null);
   const inputMusic2 = useRef(null);
   const inputMusic3 = useRef(null);
+  const inputMusic4 = useRef(null);
+  const inputMusic5 = useRef(null);
 
   function handleClick(){
 
@@ -33,21 +35,19 @@ export default function Biology() {
       
         //PHYSICS
         && inputCircuit1.current.value==="B"
-        //&& inputCircuit2.current.value==="B"
 
         //MUSIC
         && inputMusic1.current.value==="Thunder Road"
         && inputMusic2.current.value==="Alicia Keys"
         && inputMusic3.current.value==="U2"
+        && inputMusic4.current.value==="Kabhi Khushi Kabie Gham"
+        && inputMusic5.current.value==="Mohabbatein"
         ){
       alert("Correct!")
       router.push("/solved")
     }else{
       alert("Wrong answer - try again")
     }
-    console.log(inputAnswer1.current.value)
-    console.log(inputAnswer2.current.value)
-    console.log(inputAnswer3.current.value)
   }
 
 
@@ -109,25 +109,9 @@ export default function Biology() {
                 <option value="A">A</option>
                 <option value="B">B</option>
                 <option value="C">C</option>
-                <option value="D">C</option>
+                <option value="D">D</option>
             </select>
 
-{/* 
-        <h3>Question 2</h3>
-        <Image
-          src="/circuit2.png"
-          alt="Circuit Question 2"
-          width="300"
-          height="250"
-        />
-
-        <p>What is the current through each resistor?</p>
-        <select name="circuit2" id="circuit2" ref={inputCircuit2}>
-                <option value="A">The 4Ω resistor has 1.5A and the 2Ω resistors each have 3A</option>
-                <option value="B">The 4Ω resistor has 1.5A and the 2Ω resistors each have 1.5A</option>
-                <option value="C">The 4Ω resistor has 3A and the 2Ω resistors each have 3A</option>
-                <option value="D">The 4Ω resistor has 3A and the 2Ω resistors each have 1.5A</option>
-            </select> */}
 
     {/* MUSIC */}
     <h2>Music</h2>
@@ -173,6 +157,36 @@ export default function Biology() {
                 <option value="U2">U2</option>
                 <option value="Alicia Keys">Alicia Keys</option>
             </select>
+
+
+    <h4>Qu4</h4>
+    <p>Which film is this song from?</p>
+        <ReactAudioPlayer
+            src="/BoleChudiyan.mp3"
+            controls    
+        />
+        <br></br>
+      <select name="music4" id="music4" ref={inputMusic4}>
+                <option value="Kuch Kuch Hota Hai">Kuch Kuch Hota Hai</option>
+                <option value="Kabhi Khushi Kabie Gham">Kabhi Khushi Kabie Gham</option>
+                <option value="Kal Ho Naa Ho">Kal Ho Naa Ho</option>
+                <option value="Mohabbatein">Mohabbatein</option>
+            </select>
+
+
+            <h4>Qu5</h4>
+        <p>Which film is this song from?</p>
+    <ReactAudioPlayer
+        src="/AankheinKhuli.mp3"
+        controls    
+    />
+    <br></br>
+  <select name="music5" id="music5" ref={inputMusic5}>
+                <option value="Kuch Kuch Hota Hai">Kuch Kuch Hota Hai</option>
+                <option value="Kabhi Khushi Kabie Gham">Kabhi Khushi Kabie Gham</option>
+                <option value="Kal Ho Naa Ho">Kal Ho Naa Ho</option>
+                <option value="Mohabbatein">Mohabbatein</option>
+        </select>
 
 <br></br>
 

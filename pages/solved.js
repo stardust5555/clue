@@ -15,12 +15,10 @@ export default function Solved(){
     function handleClick(){
   
       if(inputPassword.current.value.toLowerCase()==="study"){
-        alert("Correct!")
         router.push("/nextclue")
       }else{
         alert("Wrong answer - try again")
       }
-      console.log(inputPassword.current.value)
     }
     return(
         <div className={styles.container}>

@@ -43,7 +43,6 @@ export default function Biology() {
         && inputMusic4.current.value==="Kabhi Khushi Kabie Gham"
         && inputMusic5.current.value==="Mohabbatein"
         ){
-      alert("Correct!")
       router.push("/solved")
     }else{
       alert("Wrong answer - try again")

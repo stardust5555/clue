@@ -56,11 +56,11 @@ export default function Biology() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>10</title>
+        <title>4</title>
       </Head>
 
       <main>
-        <h1 className={styles.title}>Clue 10</h1>
+        <h1 className={styles.title}>Clue 4: Mini Quiz</h1>
 
         <p className={styles.description}> Well done! Fill in the missing fields to progress to the next clue!</p>
 
@@ -89,7 +89,7 @@ export default function Biology() {
             <select name="answer3" id="answer3" ref={inputAnswer3}>
                 <option value="Mitochondria">contain enzymes needed for respiration</option>
                 <option value="Nucleus">holds all the genetic material including DNA</option>
-                <option value="Cytoplasm">is a jelly-like substance that contains nutrients, salts and enzymes required for chemical reactions</option>
+                <option value="Cytoplasm">is a jelly-like substance where chemical reactions take place</option>
             </select>
         </span>
 
@@ -100,11 +100,11 @@ export default function Biology() {
         <Image
           src="/circuit1.png"
           alt="Circuit Question 1"
-          width="300"
-          height="250"
+          width="350"
+          height="300"
         />
 
-        <p>A physician wants to measure the voltage and the current across the LED. How should she set up her circuit?</p>
+        <p>An engineer wants to measure the voltage and the current across the LED. How should she set up her circuit?</p>
         <select name="circuit1" id="circuit1" ref={inputCircuit1}>
                 <option value="A">A</option>
                 <option value="B">B</option>
@@ -122,6 +122,7 @@ export default function Biology() {
             controls    
         />
         <br></br>
+        <br></br>
       <select name="music1" id="music1" ref={inputMusic1}>
                 <option value="The Promised Land">The Promised Land</option>
                 <option value="Darkness on the Edge of Town">Darkness on the Edge of Town</option>
@@ -137,6 +138,7 @@ export default function Biology() {
             controls    
         />
         <br></br>
+        <br></br>
       <select name="music2" id="music2" ref={inputMusic2}>
                 <option value="Springsteen">Springsteen</option>
                 <option value="Taylor Swift">Taylor Swift</option>
@@ -150,6 +152,7 @@ export default function Biology() {
             src="/U2.mp3"
             controls    
         />
+        <br></br>
         <br></br>
       <select name="music3" id="music3" ref={inputMusic3}>
                 <option value="Springsteen">Springsteen</option>
@@ -166,6 +169,7 @@ export default function Biology() {
             controls    
         />
         <br></br>
+        <br></br>
       <select name="music4" id="music4" ref={inputMusic4}>
                 <option value="Kuch Kuch Hota Hai">Kuch Kuch Hota Hai</option>
                 <option value="Kabhi Khushi Kabie Gham">Kabhi Khushi Kabie Gham</option>
@@ -181,6 +185,7 @@ export default function Biology() {
         controls    
     />
     <br></br>
+    <br></br>
   <select name="music5" id="music5" ref={inputMusic5}>
                 <option value="Kuch Kuch Hota Hai">Kuch Kuch Hota Hai</option>
                 <option value="Kabhi Khushi Kabie Gham">Kabhi Khushi Kabie Gham</option>
@@ -188,7 +193,8 @@ export default function Biology() {
                 <option value="Mohabbatein">Mohabbatein</option>
         </select>
 
-<br></br>
+        <br></br>
+        <br></br>
 
       <button className={styles.description} onClick={handleClick}>Submit Answers</button>
       </main>

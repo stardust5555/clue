@@ -15,7 +15,6 @@ export default function Home() {
   function handleClick(){
 
     if(inputStartSquare.current.value.toLowerCase()==="c3" && inputEndSquare.current.value.toLowerCase()==="d6"){
-      alert("Correct!")
       router.push("/biology")
     }else{
       alert("Wrong answer - try again")
@@ -30,11 +29,11 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Clue 19</title>
+        <title>3</title>
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Clue 9</h1>
+        <h1 className={styles.title}>Clue 3: Chess</h1>
         <br></br>
 
         <Image
@@ -44,7 +43,7 @@ export default function Home() {
           height="300"
         />
 
-        <p className={styles.description}> Please enter the winning move...
+        <p className={styles.description}> Please enter the winning move for mate in one...
         <br></br>
         e.g. C3 to D6
         </p>

@@ -14,7 +14,7 @@ export default function Home() {
 
   function handleClick(){
 
-    if(inputStartSquare.current.value.toLowerCase()==="c3" && inputEndSquare.current.value.toLowerCase()==="d6"){
+    if(inputStartSquare.current.value.toLowerCase()==="h6" && inputEndSquare.current.value.toLowerCase()==="g8"){
       router.push("/biology")
     }else{
       alert("Wrong answer - try again")

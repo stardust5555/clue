@@ -65,7 +65,7 @@ export default function Biology() {
 
         <h2>Biology</h2>
 
-      <p>Certain types of cells carry haemoglobin. This cells are called
+      <p>Certain types of cells carry haemoglobin. These cells are called
         <span>        
             <select name="answer1" id="answer1" ref={inputAnswer1}>
                 <option value="Red Blood Cells">red blood cells</option>
@@ -86,9 +86,9 @@ export default function Biology() {
         . They have no nucleus to make room for lots of haemoglobin. A nucleus  
         <span>        
             <select name="answer3" id="answer3" ref={inputAnswer3}>
-                <option value="Mitochondria">contain enzymes needed for respiration</option>
-                <option value="Nucleus">holds all the genetic material including DNA</option>
-                <option value="Cytoplasm">is a jelly-like substance where chemical reactions take place</option>
+                <option value="Mitochondria">contains enzymes needed for respiration.</option>
+                <option value="Nucleus">holds all the genetic material including DNA.</option>
+                <option value="Cytoplasm">is a jelly-like substance where chemical reactions take place.</option>
             </select>
         </span>
 

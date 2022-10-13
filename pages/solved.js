@@ -26,12 +26,12 @@ export default function Solved(){
             <title>5</title>
           </Head>
 
-          <h1 className={styles.title}>Clue 6</h1>
+          <h1 className={styles.title}>Clue 5</h1>
 
           <p className={styles.description}> Congratulations! Here's the next clue. You can solve the clue using either option 1 or option 2 - your choice!</p>
 
         <h4>Option 1</h4>
-        <p>તે સફરજનના બાઉલમાં છે</p>
+        <p>તે સફરજનનો બાઉલ છે</p>
 
         <h4>Option 2</h4>
         {/* <p>Clip 1</p>

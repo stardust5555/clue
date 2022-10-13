@@ -8,7 +8,7 @@ export default function NextClue(){
         
         <div className={styles.container}>
           <Head>
-            <title>6</title>
+            <title>7</title>
           </Head>
             <h1>You got it right!</h1>
             <p>Using the wordle solution and the map below, find your next clue!</p>

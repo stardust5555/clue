@@ -44,7 +44,7 @@ export default function Home() {
           height="300"
         />
 
-        <p className={styles.description}> Please enter the winning move for mate in one...
+        <p className={styles.description}> Please enter the winning move for mate in one. White to move.
         <br></br>
         e.g. C3 to D6
         </p>

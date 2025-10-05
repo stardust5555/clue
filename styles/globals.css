@@ -24,3 +24,31 @@ a {
     background: black;
   }
 }
+
+:root {
+  /* Backgrounds */
+  --bg: #fefcfb;            /* off-white cream background */
+  --card-bg: #ffffff;       /* clean white cards */
+  --input-bg: #fff7ed;      /* soft peach input background */
+
+  /* Text Colors */
+  --text: #2d2a32;          /* warm dark brown/gray */
+  --gray: #6b7280;          /* standard muted gray */
+  --muted: #a8a29e;         /* soft placeholder */
+
+  /* Primary Accent (Fun Blue) */
+  --blue: #3b82f6;          /* vibrant blue (buttons) */
+  --blue-hover: #2563eb;
+
+  /* Secondary Accent (Peachy) */
+  --accent: #fbbf24;        /* fun yellow-orange accent */
+  --accent-light: #fef3c7;  /* pastel yellow background */
+
+  /* Error */
+  --error: #ef4444;         /* red */
+  --error-bg: #fef2f2;
+
+  /* Borders & Rounding */
+  --border: #e5e7eb;
+  --radius: 10px;
+}

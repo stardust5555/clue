@@ -1,75 +1,74 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import { useRef } from 'react';
-import { useRouter } from 'next/router';
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import { useRef, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Home() {
-
-  let router = useRouter();
-
-
+  const router = useRouter();
   const inputStartSquare = useRef(null);
   const inputEndSquare = useRef(null);
+  const [error, setError] = useState(null);
+  const [errorKey, setErrorKey] = useState(0) // new state
 
-  function handleClick(){
-
-    if(inputStartSquare.current.value.toLowerCase()==="h6" && inputEndSquare.current.value.toLowerCase()==="g8" //"a3" && inputEndSquare.current.value.toLowerCase()==="b1"
-    ){
-      router.push("/biology")
-    }else{
-      alert("Wrong answer - try again")
+  function handleClick() {
+    const start = inputStartSquare.current.value.trim().toLowerCase();
+    const end = inputEndSquare.current.value.trim().toLowerCase();
+    if (start === "a4" && end === "b1") {
+      router.push("/biology");
+    } else {
+      setError("❌ Wrong answer. Try again!")
+       setErrorKey(prev => prev + 1) // triggers rerender even if same message
     }
-    console.log(inputStartSquare.current.value)
-    console.log(inputEndSquare.current.value)
   }
-
-
-
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>3</title>
+        <title>Chess</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Clue 3: Chess</h1>
-        <br></br>
+        <h1 className={styles.title}>♟️ Clue 3: Chess</h1>
 
         <Image
-          src="/chess.png"
-          alt="Chess Game"
-          width="300"
-          height="300"
+          src="/chess2.png"
+          alt="Chess Puzzle"
+          width={300}
+          height={300}
+          className={styles.image}
         />
 
-        <p className={styles.description}> Please enter the winning move for mate in one...
-        <br></br>
-        e.g. C3 to D6
+        <p className={styles.subtitle}>
+          What is the <strong>winning move</strong> (mate in one)?
+          <br />
+          Format: <em>e.g. H6 to G8</em>
         </p>
 
+        <div className={styles.inputRow}>
+          <input
+            ref={inputStartSquare}
+            type="text"
+            placeholder="Start (e.g. H6)"
+            className={styles.input}
+          />
+          <span className={styles.toText}>to</span>
+          <input
+            ref={inputEndSquare}
+            type="text"
+            placeholder="End (e.g. G8)"
+            className={styles.input}
+          />
+        </div>
 
-      {/* <label for="startSquare">Starting Position:</label> */}
-      <input
-        ref={inputStartSquare}
-        type="text"
-        id="startSquare"
-        name="startSquare"
-      />
-
-<p>to</p>
-      {/* <label for="endSquare">Ending Position:</label> */}
-      <input
-        ref={inputEndSquare}
-        type="text"
-        id="endSquare"
-        name="endSquare"
-      />
-<br></br>
-<br></br>
-      <button onClick={handleClick}>Submit Answer</button>
+        <button className={styles.button} onClick={handleClick}>
+          ✅ Submit Answer
+        </button>
+        <p className={`${error ? styles.inputError : ""}`}>
+        {error && <p key={errorKey} className={styles.error}>{error}</p>}
+        </p>
       </main>
     </div>
-  )
+  );
 }

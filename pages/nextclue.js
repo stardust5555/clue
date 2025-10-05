@@ -10,8 +10,6 @@ export default function NextClue(){
           <Head>
             <title>7</title>
           </Head>
-            <h1>You got it right!</h1>
-            <p>Using the wordle solution and the map below, find your next clue!</p>
             <Image
             src="/bookcase.png"
             alt="bookcase"

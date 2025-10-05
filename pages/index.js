@@ -14,7 +14,7 @@ export default function Home() {
   function handleClick() {
     const start = inputStartSquare.current.value.trim().toLowerCase();
     const end = inputEndSquare.current.value.trim().toLowerCase();
-    if (start === "a4" && end === "b1") {
+    if (start === "a3" && end === "b1") {
       router.push("/biology");
     } else {
       setError("❌ Wrong answer. Try again!")
